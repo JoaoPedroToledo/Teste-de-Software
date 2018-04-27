@@ -8,6 +8,10 @@ public class Main {
 		Cidade c = new Cidade();
 		String r = c.getXMLCidade("cascalho");
 		System.out.println(r);
+		Cidade[] lista = c.xmlToObjectCidade(r);
+		for (Cidade cidade : lista) {
+			System.out.println(cidade);
+		}
 
 	}
 
